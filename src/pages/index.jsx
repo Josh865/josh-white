@@ -101,19 +101,21 @@ export default function Home() {
               </p>
             </div>
 
-            <hr className="border-zinc-100" />
+            <div className="px-16">
+              <hr className="w-full border-zinc-100" />
+            </div>
 
             <div className="py-12 px-16">
-              <h2 class="text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
+              <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
                 Selected Projects
               </h2>
 
-              <div className="mt-12 flex flex-col gap-y-12">
+              <div className="flex flex-col divide-y">
                 {projects.map((project) => (
                   <>
-                    <div className="grid grid-cols-12 gap-x-8">
-                      <div className="col-span-4 flex flex-col">
-                        <h3 class="text-lg font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl">
+                    <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-[33%,1fr]">
+                      <div className="flex flex-col">
+                        <h3 class="text-lg font-medium tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl sm:font-bold">
                           {project.name}
                         </h3>
                         <p className="order-first text-sm font-bold tracking-tight text-zinc-400">
@@ -123,7 +125,7 @@ export default function Home() {
                           {project.description}
                         </p>
                       </div>
-                      <div className="col-span-8">
+                      <div className="">
                         <Link href="/" aria-label="Home">
                           <Image
                             src={eedsDashboardImage}
