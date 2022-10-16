@@ -3,7 +3,13 @@ import Image from 'next/future/image';
 import Link from 'next/link';
 
 import joshImage from '@/images/josh.png';
-import eedsDashboardImage from '@/images/eeds-dashboard.png';
+import eedsDashboardImage from '@/images/projects/eeds-dashboard.jpg';
+import covidStoriesImage from '@/images/projects/covid-stories.jpg';
+import copyrightOfficeImage from '@/images/projects/copyright-office.jpg';
+import eedsAppImage from '@/images/projects/eeds-app.jpg';
+import oralHistoriesImage from '@/images/projects/oral-histories.jpg';
+import walcImage from '@/images/projects/walc.jpg';
+import campusDatabaseImage from '@/images/projects/campus-database.jpg';
 
 const projects = [
   {
@@ -12,6 +18,7 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
+    image: eedsDashboardImage,
   },
   {
     name: 'eeds Landing Page',
@@ -26,6 +33,7 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
+    image: covidStoriesImage,
   },
   {
     name: 'University Copyright Office',
@@ -33,6 +41,7 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
+    image: copyrightOfficeImage,
   },
   {
     name: 'Oral Histories',
@@ -40,6 +49,7 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
+    image: oralHistoriesImage,
   },
   {
     name: 'Wilmeth Active Learning Center',
@@ -47,6 +57,7 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
+    image: walcImage,
   },
   {
     name: 'eeds Mobile Application',
@@ -54,6 +65,7 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
+    image: eedsAppImage,
   },
   {
     name: 'Campus History',
@@ -61,6 +73,7 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
+    image: campusDatabaseImage,
   },
 ];
 
@@ -128,7 +141,7 @@ export default function Home() {
                       <div className="">
                         <Link href="/" aria-label="Home">
                           <Image
-                            src={eedsDashboardImage}
+                            src={project.image}
                             alt=""
                             className="h-full w-full rounded-xl bg-zinc-100 object-cover shadow-lg dark:bg-zinc-800"
                             priority
