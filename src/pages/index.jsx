@@ -86,17 +86,17 @@ export default function Home() {
                   priority
                 />
               </Link>
-              <h1 class="mt-12 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+              <h1 className="mt-12 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                 Bringing together design and analysis to deliver delightful
                 digital experiences
               </h1>
-              <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                 I’m Josh, a full stack web developer with a special interest in
                 front-end development and design. I’m currently leading efforts
                 to modernize eeds. Before that, I built web applications at
                 Purdue University.
               </p>
-              <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                 I have a PhD in Analytic Philosophy from Purdue.
               </p>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
 
             <div className="py-12 px-16">
-              <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
+              <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
                 Selected Projects
               </h2>
 
@@ -115,7 +115,7 @@ export default function Home() {
                   <>
                     <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-[33%,1fr]">
                       <div className="flex flex-col">
-                        <h3 class="text-lg font-medium tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl sm:font-bold">
+                        <h3 className="text-lg font-medium tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl sm:font-bold">
                           {project.name}
                         </h3>
                         <p className="order-first text-sm font-bold tracking-tight text-zinc-400">
