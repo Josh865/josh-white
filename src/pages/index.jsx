@@ -11,6 +11,10 @@ import oralHistoriesImage from '@/images/projects/oral-histories.jpg';
 import walcImage from '@/images/projects/walc.jpg';
 import campusDatabaseImage from '@/images/projects/campus-database.jpg';
 
+import { LaravelLogo } from '@/components/logos/laravel';
+import { NextLogo } from '@/components/logos/next';
+import { ReactLogo } from '@/components/logos/react';
+
 const projects = [
   {
     name: 'eeds Dashboard',
@@ -99,7 +103,7 @@ export default function Home() {
                   priority
                 />
               </Link>
-              <h1 className="mt-12 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+              <h1 className="mt-12 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
                 Bringing together design and analysis to deliver delightful
                 digital experiences
               </h1>
@@ -119,7 +123,7 @@ export default function Home() {
             </div>
 
             <div className="py-12 px-16">
-              <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
+              <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl">
                 Selected Projects
               </h2>
 
@@ -128,7 +132,7 @@ export default function Home() {
                   <>
                     <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-[33%,1fr]">
                       <div className="flex flex-col">
-                        <h3 className="text-lg font-medium tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl sm:font-bold">
+                        <h3 className="text-lg font-medium tracking-tight text-zinc-800 sm:text-xl sm:font-bold">
                           {project.name}
                         </h3>
                         <p className="order-first text-sm font-bold tracking-tight text-zinc-400">
@@ -137,6 +141,11 @@ export default function Home() {
                         <p className="mt-4 text-sm text-zinc-700">
                           {project.description}
                         </p>
+                        <div className="mt-4 flex items-center gap-x-2">
+                          <LaravelLogo className="h-8 w-8" />
+                          <NextLogo className="h-8 w-8 text-black" />
+                          <ReactLogo className="h-8 w-8 text-black" />
+                        </div>
                       </div>
                       <div className="">
                         <Link href="/" aria-label="Home">
