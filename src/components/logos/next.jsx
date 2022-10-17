@@ -3,11 +3,12 @@ export function NextLogo({ className }) {
     <svg
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`stroke-current ${className}`}
+      className={`${className} stroke-current`}
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
+      <title>Next.js</title>
       <defs>
         <linearGradient
           id="next-icon-gradient-a"

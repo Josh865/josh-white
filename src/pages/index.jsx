@@ -11,6 +11,8 @@ import oralHistoriesImage from '@/images/projects/oral-histories.jpg';
 import walcImage from '@/images/projects/walc.jpg';
 import campusDatabaseImage from '@/images/projects/campus-database.jpg';
 
+import wavesImage from '@/images/waves.svg';
+
 import { LaravelLogo } from '@/components/logos/laravel';
 import { NextLogo } from '@/components/logos/next';
 import { ReactLogo } from '@/components/logos/react';
@@ -26,13 +28,23 @@ const projects = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
     image: eedsDashboardImage,
+    logos: [ReactLogo, NextLogo, TailwindLogo],
   },
+  // {
+  //   name: 'eeds Landing Page',
+  //   year: '2022',
+  //   description:
+  //     'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
+  //   href: '#',
+  // },
   {
-    name: 'eeds Landing Page',
-    year: '2022',
+    name: 'University Copyright Office',
+    year: '2021',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
+    image: copyrightOfficeImage,
+    logos: [LaravelLogo, VueLogo, TailwindLogo],
   },
   {
     name: 'COVID Stories',
@@ -41,15 +53,9 @@ const projects = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
     image: covidStoriesImage,
+    logos: [LaravelLogo, VueLogo, TailwindLogo],
   },
-  {
-    name: 'University Copyright Office',
-    year: '2021',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
-    href: '#',
-    image: copyrightOfficeImage,
-  },
+
   {
     name: 'Oral Histories',
     year: '2020',
@@ -57,6 +63,7 @@ const projects = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
     image: oralHistoriesImage,
+    logos: [LaravelLogo, VueLogo, TailwindLogo],
   },
   {
     name: 'Wilmeth Active Learning Center',
@@ -65,6 +72,7 @@ const projects = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
     image: walcImage,
+    logos: [TailwindLogo],
   },
   {
     name: 'eeds Mobile Application',
@@ -73,6 +81,7 @@ const projects = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
     image: eedsAppImage,
+    logos: [ReactNativeLogo],
   },
   {
     name: 'Campus History',
@@ -81,6 +90,7 @@ const projects = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
     href: '#',
     image: campusDatabaseImage,
+    logos: [LaravelLogo, VueLogo, TailwindLogo],
   },
 ];
 
@@ -95,37 +105,49 @@ export default function Home() {
 
       <main>
         <div className="sm:px-12">
-          <div className="mx-auto max-w-7xl bg-white">
-            <div className="max-w-3xl px-16 py-12">
-              <Link href="/" aria-label="Home">
+          <div className="relative mx-auto max-w-7xl bg-white">
+            <div className="relative overflow-hidden">
+              <div className="relative z-10 max-w-3xl px-16 py-12">
+                <Link href="/" aria-label="Home">
+                  <Image
+                    src={joshImage}
+                    alt=""
+                    sizes="4rem"
+                    className="h-16 w-16 rounded-full bg-zinc-100 object-cover"
+                    priority
+                  />
+                </Link>
+                <h1 className="mt-12 text-3xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
+                  Bringing together design and analysis to deliver delightful
+                  digital experiences
+                </h1>
+                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                  I’m Josh, a full stack web developer with a special interest
+                  in front-end development and design. I’m currently leading
+                  efforts to modernize eeds. Before that, I built web
+                  applications at Purdue University.
+                </p>
+                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                  I have a PhD in Analytic Philosophy from Purdue.
+                </p>
+              </div>
+              <div className="absolute top-1/4 left-0 scale-150 md:top-0 md:bottom-0 md:scale-[1.15]">
                 <Image
-                  src={joshImage}
+                  src={wavesImage}
                   alt=""
-                  sizes="4rem"
-                  className="h-16 w-16 rounded-full bg-zinc-100 object-cover dark:bg-zinc-800"
+                  className="stroke-current"
                   priority
                 />
-              </Link>
-              <h1 className="mt-12 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
-                Bringing together design and analysis to deliver delightful
-                digital experiences
-              </h1>
-              <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                I’m Josh, a full stack web developer with a special interest in
-                front-end development and design. I’m currently leading efforts
-                to modernize eeds. Before that, I built web applications at
-                Purdue University.
-              </p>
-              <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                I have a PhD in Analytic Philosophy from Purdue.
-              </p>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-white" />
+              <div className="absolute inset-0 hidden bg-gradient-to-tr from-white md:block" />
             </div>
 
             <div className="px-16">
               <hr className="w-full border-zinc-100" />
             </div>
 
-            <div className="py-12 px-16">
+            <div className="z-10 py-12 px-16">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl">
                 Selected Projects
               </h2>
@@ -144,14 +166,13 @@ export default function Home() {
                         <p className="mt-4 text-sm text-zinc-700">
                           {project.description}
                         </p>
-                        <div className="mt-4 flex items-center gap-x-2">
-                          <LaravelLogo className="h-8 w-8 text-zinc-600" />
-                          <NextLogo className="h-8 w-8 text-zinc-600" />
-                          <ReactLogo className="h-8 w-8 text-zinc-600" />
-                          <VueLogo className="h-8 w-8 grayscale" />
-                          <TailwindLogo className="h-8 w-8 grayscale" />
-                          <ReactNativeLogo className="h-8 w-8 text-zinc-500 grayscale" />
-                        </div>
+                        {project.logos ? (
+                          <div className="mt-4 flex items-center gap-x-2">
+                            {project.logos.map((Logo, index) => (
+                              <Logo key={index} className="h-8 w-8" />
+                            ))}
+                          </div>
+                        ) : null}
                       </div>
                       <div className="">
                         <Link href="/" aria-label="Home">

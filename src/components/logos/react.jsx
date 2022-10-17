@@ -3,11 +3,12 @@ export function ReactLogo({ className }) {
     <svg
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`stroke-current ${className}`}
+      className={`stroke-current text-[#60dbfb] ${className}`}
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
+      <title>React</title>
       <ellipse cx="16" cy="16" rx="13" ry="5"></ellipse>
       <ellipse
         cx="16"
