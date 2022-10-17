@@ -30,7 +30,20 @@ const projects = [
       'A prototype for a reimagined eeds administrative dashboard, featuring dynamic, interactive charts, an improved information hierarchy, and novel yet intuitive UI interactions to enable advanced functionality with minimal visual clutter.',
     href: 'https://eeds-dashboard.vercel.app/',
     image: eedsDashboardImage,
-    logos: [ReactLogo, NextLogo, TailwindLogo],
+    stack: [
+      {
+        name: 'React',
+        Icon: ReactLogo,
+      },
+      {
+        name: 'Next.js',
+        Icon: NextLogo,
+      },
+      {
+        name: 'Tailwind',
+        Icon: TailwindLogo,
+      },
+    ],
     accentColor: 'border-[#7e22ce] group-hover:text-[#7e22ce]',
   },
   // {
@@ -47,7 +60,20 @@ const projects = [
       'A new-from-the-ground-up rebuild of the aging website for Purdue’s Copyright Office. Highlights include an interactive fair use analysis, a clearer presentation of decision trees, and more effective use of color and weight to convey intent and importance.',
     href: 'https://www.lib.purdue.edu/uco/',
     image: copyrightOfficeImage,
-    logos: [LaravelLogo, VueLogo, TailwindLogo],
+    stack: [
+      {
+        name: 'Laravel',
+        Icon: LaravelLogo,
+      },
+      {
+        name: 'Vue',
+        Icon: VueLogo,
+      },
+      {
+        name: 'Tailwind',
+        Icon: TailwindLogo,
+      },
+    ],
     accentColor: 'border-[#8e6f3e] group-hover:text-[#8e6f3e]',
   },
   {
@@ -57,7 +83,20 @@ const projects = [
       'This collaborative project between Purdue Libraries and Office of the Provost enables the Purdue and boader West Lafayette communities to share their experiences of the COVID-19 pandemic. The interactive form allows for a dynamic number of entries and stories can be sorted and filtered according to a number of criteria.',
     href: 'https://webapps.lib.purdue.edu/covid-stories/',
     image: covidStoriesImage,
-    logos: [LaravelLogo, VueLogo, TailwindLogo],
+    stack: [
+      {
+        name: 'Laravel',
+        Icon: LaravelLogo,
+      },
+      {
+        name: 'Vue',
+        Icon: VueLogo,
+      },
+      {
+        name: 'Tailwind',
+        Icon: TailwindLogo,
+      },
+    ],
     accentColor: 'border-[#8e6f3e] group-hover:text-[#8e6f3e]',
   },
 
@@ -68,7 +107,20 @@ const projects = [
       'Purdue’s large archive of oral history recordings are made available for easy discovery and access through a robust search experience. A custom administrative interface allows staff to easily catalog and preserve large amounts of metadata for each oral history.',
     href: 'https://collections.lib.purdue.edu/oral-history/',
     image: oralHistoriesImage,
-    logos: [LaravelLogo, VueLogo, TailwindLogo],
+    stack: [
+      {
+        name: 'Laravel',
+        Icon: LaravelLogo,
+      },
+      {
+        name: 'Vue',
+        Icon: VueLogo,
+      },
+      {
+        name: 'Tailwind',
+        Icon: TailwindLogo,
+      },
+    ],
     accentColor: 'border-[#8e6f3e] group-hover:text-[#8e6f3e]',
   },
   {
@@ -78,7 +130,12 @@ const projects = [
       'This site showcases the Libraries’ most advanced space to date, allowing visitors to learn more about its history, facilities, and mission.',
     href: 'https://www.lib.purdue.edu/walc/',
     image: walcImage,
-    logos: [TailwindLogo],
+    stack: [
+      {
+        name: 'Tailwind',
+        Icon: TailwindLogo,
+      },
+    ],
     accentColor: 'border-[#8e6f3e] group-hover:text-[#8e6f3e]',
   },
   {
@@ -88,7 +145,12 @@ const projects = [
       'A cross-platform mobile application written in React Native that allows attendees to medicial education events to easily document and manage their attendance.',
     href: 'https://apps.apple.com/us/app/eeds-mobile/id541573257?platform=iphone',
     image: eedsAppImage,
-    logos: [ReactNativeLogo],
+    stack: [
+      {
+        name: 'React Native',
+        Icon: ReactNativeLogo,
+      },
+    ],
     accentColor: 'border-[#3465fd] group-hover:text-[#3465fd]',
   },
   {
@@ -98,7 +160,20 @@ const projects = [
       'This multi-year, grant-funded project allows visitors to explore the history of Purdue’s West Lafayette campus through an interactive map built with Esri’s ArcGIS JavaScript Api, a full-featured search experience built with Algolia, and a dynamic building timeline that allows visitors to explore how the campus’s buildings have changed over its history. It was featured in local and national news outlets, including the Houston Chronicle, San Antonio Express-News, and Albany (NY) Times Union, among others.',
     href: 'http://collections.lib.purdue.edu/campus/',
     image: campusDatabaseImage,
-    logos: [LaravelLogo, VueLogo, TailwindLogo],
+    stack: [
+      {
+        name: 'Laravel',
+        Icon: LaravelLogo,
+      },
+      {
+        name: 'Vue',
+        Icon: VueLogo,
+      },
+      {
+        name: 'Tailwind',
+        Icon: TailwindLogo,
+      },
+    ],
     accentColor: 'border-[#8e6f3e] group-hover:text-[#8e6f3e]',
   },
 ];
@@ -194,15 +269,18 @@ export default function Home() {
                         <p className="mt-4 text-sm text-zinc-700">
                           {project.description}
                         </p>
-                        {project.logos ? (
-                          <div className="mt-4 flex items-center gap-x-2">
-                            {project.logos.map((Logo, index) => (
-                              <Logo
-                                key={index}
-                                className="h-6 w-6 md:h-8 md:w-8"
-                              />
+                        {project.stack ? (
+                          <ul
+                            className="mt-4 flex items-center gap-x-2"
+                            role="list"
+                          >
+                            {project.stack.map((tech, index) => (
+                              <li key={index}>
+                                <span className="sr-only">{tech.name}</span>
+                                <tech.Icon className="h-8 w-8" />
+                              </li>
                             ))}
-                          </div>
+                          </ul>
                         ) : null}
                       </div>
                       <Image
