@@ -43,7 +43,7 @@ const projects = [
         Icon: TailwindLogo,
       },
     ],
-    accentColor: 'border-[#7e22ce] group-hover:text-[#7e22ce]',
+    accentColor: 'decoration-[#7e22ce] group-hover:text-[#7e22ce]',
   },
   // {
   //   name: 'eeds Landing Page',
@@ -73,7 +73,7 @@ const projects = [
         Icon: TailwindLogo,
       },
     ],
-    accentColor: 'border-[#8e6f3e] group-hover:text-[#8e6f3e]',
+    accentColor: 'decoration-[#8e6f3e] group-hover:text-[#8e6f3e]',
   },
   {
     name: 'Purdue COVID Stories',
@@ -96,7 +96,7 @@ const projects = [
         Icon: TailwindLogo,
       },
     ],
-    accentColor: 'border-[#8e6f3e] group-hover:text-[#8e6f3e]',
+    accentColor: 'decoration-[#8e6f3e] group-hover:text-[#8e6f3e]',
   },
 
   {
@@ -120,7 +120,7 @@ const projects = [
         Icon: TailwindLogo,
       },
     ],
-    accentColor: 'border-[#8e6f3e] group-hover:text-[#8e6f3e]',
+    accentColor: 'decoration-[#8e6f3e] group-hover:text-[#8e6f3e]',
   },
   {
     name: 'Wilmeth Active Learning Center',
@@ -135,7 +135,7 @@ const projects = [
         Icon: TailwindLogo,
       },
     ],
-    accentColor: 'border-[#8e6f3e] group-hover:text-[#8e6f3e]',
+    accentColor: 'decoration-[#8e6f3e] group-hover:text-[#8e6f3e]',
   },
   {
     name: 'eeds Mobile Application',
@@ -150,7 +150,7 @@ const projects = [
         Icon: ReactNativeLogo,
       },
     ],
-    accentColor: 'border-[#3465fd] group-hover:text-[#3465fd]',
+    accentColor: 'decoration-[#3465fd] group-hover:text-[#3465fd]',
   },
   {
     name: 'Purdue Campus History',
@@ -173,7 +173,7 @@ const projects = [
         Icon: TailwindLogo,
       },
     ],
-    accentColor: 'border-[#8e6f3e] group-hover:text-[#8e6f3e]',
+    accentColor: 'decoration-[#8e6f3e] group-hover:text-[#8e6f3e]',
   },
 ];
 
@@ -249,7 +249,7 @@ export default function Home() {
                               className={`group inline-flex items-center gap-x-1`}
                             >
                               <span
-                                className={`border-b-2 transition ${project.accentColor}`}
+                                className={`underline decoration-2 underline-offset-4 transition ${project.accentColor}`}
                               >
                                 {project.name}
                               </span>
