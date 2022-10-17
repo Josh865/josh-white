@@ -14,6 +14,7 @@ import campusDatabaseImage from '@/images/projects/campus-database.jpg';
 import { LaravelLogo } from '@/components/logos/laravel';
 import { NextLogo } from '@/components/logos/next';
 import { ReactLogo } from '@/components/logos/react';
+import { VueLogo } from '@/components/logos/vue';
 
 const projects = [
   {
@@ -142,9 +143,10 @@ export default function Home() {
                           {project.description}
                         </p>
                         <div className="mt-4 flex items-center gap-x-2">
-                          <LaravelLogo className="h-8 w-8" />
-                          <NextLogo className="h-8 w-8 text-black" />
-                          <ReactLogo className="h-8 w-8 text-black" />
+                          <LaravelLogo className="h-8 w-8 text-zinc-600" />
+                          <NextLogo className="h-8 w-8 text-zinc-600" />
+                          <ReactLogo className="h-8 w-8 text-zinc-600" />
+                          <VueLogo className="h-8 w-8 grayscale" />
                         </div>
                       </div>
                       <div className="">
