@@ -15,6 +15,8 @@ import { LaravelLogo } from '@/components/logos/laravel';
 import { NextLogo } from '@/components/logos/next';
 import { ReactLogo } from '@/components/logos/react';
 import { VueLogo } from '@/components/logos/vue';
+import { TailwindLogo } from '@/components/logos/tailwind';
+import { ReactNativeLogo } from '@/components/logos/react-native';
 
 const projects = [
   {
@@ -129,8 +131,8 @@ export default function Home() {
               </h2>
 
               <div className="flex flex-col divide-y">
-                {projects.map((project) => (
-                  <>
+                {projects.map((project, index) => (
+                  <div key={index}>
                     <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-[33%,1fr]">
                       <div className="flex flex-col">
                         <h3 className="text-lg font-medium tracking-tight text-zinc-800 sm:text-xl sm:font-bold">
@@ -147,6 +149,8 @@ export default function Home() {
                           <NextLogo className="h-8 w-8 text-zinc-600" />
                           <ReactLogo className="h-8 w-8 text-zinc-600" />
                           <VueLogo className="h-8 w-8 grayscale" />
+                          <TailwindLogo className="h-8 w-8 grayscale" />
+                          <ReactNativeLogo className="h-8 w-8 text-zinc-500 grayscale" />
                         </div>
                       </div>
                       <div className="">
@@ -160,7 +164,7 @@ export default function Home() {
                         </Link>
                       </div>
                     </div>
-                  </>
+                  </div>
                 ))}
               </div>
             </div>
