@@ -192,15 +192,13 @@ export default function Home() {
           <div className="relative mx-auto max-w-7xl bg-white">
             <div className="relative overflow-hidden">
               <div className="relative z-10 max-w-3xl px-16 py-12">
-                <Link href="/" aria-label="Home">
-                  <Image
-                    src={joshImage}
-                    alt=""
-                    sizes="4rem"
-                    className="h-16 w-16 rounded-full bg-zinc-100 object-cover"
-                    priority
-                  />
-                </Link>
+                <Image
+                  src={joshImage}
+                  alt=""
+                  sizes="4rem"
+                  className="h-16 w-16 rounded-full bg-zinc-100 object-cover"
+                  priority
+                />
                 <h1 className="mt-12 text-3xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
                   Bringing together design and analysis to deliver delightful
                   digital experiences
