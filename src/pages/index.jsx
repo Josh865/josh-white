@@ -25,7 +25,7 @@ const projects = [
     name: 'eeds Dashboard',
     year: '2022',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
+      'A prototype for a reimagined eeds administrative dashboard, featuring dynamic, interactive charts, an improved information hierarchy, and novel yet intuitive UI interactions to enable advanced functionality with minimal visual clutter.',
     href: '#',
     image: eedsDashboardImage,
     logos: [ReactLogo, NextLogo, TailwindLogo],
@@ -38,29 +38,29 @@ const projects = [
   //   href: '#',
   // },
   {
-    name: 'University Copyright Office',
+    name: 'Purdue University Copyright Office',
     year: '2021',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
+      'A new-from-the-ground-up rebuild of the aging website for Purdue’s Copyright Office. Highlights include an interactive fair use analysis, a clearer presentation of decision trees, and more effective use of color and weight to convey intent and importance.',
     href: '#',
     image: copyrightOfficeImage,
     logos: [LaravelLogo, VueLogo, TailwindLogo],
   },
   {
-    name: 'COVID Stories',
+    name: 'Purdue COVID Stories',
     year: '2021',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
+      'This collaborative project between Purdue Libraries and Office of the Provost enables the Purdue and boader West Lafayette communities to share their experiences of the COVID-19 pandemic. The interactive form allows for a dynamic number of entries and stories can be sorted and filtered according to a number of criteria.',
     href: '#',
     image: covidStoriesImage,
     logos: [LaravelLogo, VueLogo, TailwindLogo],
   },
 
   {
-    name: 'Oral Histories',
+    name: 'Purdue Oral Histories',
     year: '2020',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
+      'Purdue’s large archive of oral history recordings are made available for easy discovery and access through a robust search experience. A custom administrative interface allows staff to easily catalog and preserve large amounts of metadata for each oral history.',
     href: '#',
     image: oralHistoriesImage,
     logos: [LaravelLogo, VueLogo, TailwindLogo],
@@ -69,7 +69,7 @@ const projects = [
     name: 'Wilmeth Active Learning Center',
     year: '2019',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
+      'This site showcases the Libraries’ most advanced space to date, allowing visitors to learn more about its history, facilities, and mission.',
     href: '#',
     image: walcImage,
     logos: [TailwindLogo],
@@ -78,16 +78,16 @@ const projects = [
     name: 'eeds Mobile Application',
     year: '2018',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
+      'A cross-platform mobile application written in React Native that allows attendees to medicial education events to easily document and manage their attendance.',
     href: '#',
     image: eedsAppImage,
     logos: [ReactNativeLogo],
   },
   {
-    name: 'Campus History',
+    name: 'Purdue Campus History',
     year: '2017',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
+      'This multi-year, grant-funded project allows visitors to explore the history of Purdue’s West Lafayette campus through an interactive map built with Esri’s ArcGIS JavaScript Api, a full-featured search experience built with Algolia, and a dynamic building timeline that allows visitors to explore how the campus’s buildings have changed over its history.',
     href: '#',
     image: campusDatabaseImage,
     logos: [LaravelLogo, VueLogo, TailwindLogo],
@@ -122,13 +122,15 @@ export default function Home() {
                   digital experiences
                 </h1>
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                  I’m Josh, a full stack web developer with a special interest
-                  in front-end development and design. I’m currently leading
-                  efforts to modernize eeds. Before that, I built web
+                  I’m Josh White, a full stack web developer with a special
+                  interest in front-end development and design. I’m currently
+                  leading efforts to modernize eeds. Before that, I built web
                   applications at Purdue University.
                 </p>
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                  I have a PhD in Analytic Philosophy from Purdue.
+                  I have a PhD in Analytic Philosophy from Purdue, where my
+                  research focused on epistemology–specificially, the epistemic
+                  mechanisms and consequences of enculturation.
                 </p>
               </div>
               <div className="absolute top-1/4 left-0 scale-150 md:top-0 md:bottom-0 md:scale-[1.15]">
@@ -169,7 +171,10 @@ export default function Home() {
                         {project.logos ? (
                           <div className="mt-4 flex items-center gap-x-2">
                             {project.logos.map((Logo, index) => (
-                              <Logo key={index} className="h-8 w-8" />
+                              <Logo
+                                key={index}
+                                className="h-6 w-6 md:h-8 md:w-8"
+                              />
                             ))}
                           </div>
                         ) : null}
@@ -192,6 +197,17 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      <div className="sm:px-12">
+        <div className="mx-auto max-w-7xl bg-white px-16">
+          <hr className="border-zinc-100" />
+          <footer className="relative mx-auto flex justify-end bg-white py-10">
+            <p className="text-sm text-zinc-400">
+              © {new Date().getFullYear()} Josh White. All rights reserved.
+            </p>
+          </footer>
+        </div>
+      </div>
     </div>
   );
 }
