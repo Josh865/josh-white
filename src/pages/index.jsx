@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/future/image';
-import Link from 'next/link';
 
-import joshImage from '@/images/josh.png';
+import joshImage from '@/images/josh.jpg';
 import eedsDashboardImage from '@/images/projects/eeds-dashboard.jpg';
 import covidStoriesImage from '@/images/projects/covid-stories.jpg';
 import copyrightOfficeImage from '@/images/projects/copyright-office.jpg';
@@ -210,7 +209,7 @@ export default function Home() {
                   applications at Purdue University.
                 </p>
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                  I have a PhD in Analytic Philosophy from Purdue, where my
+                  I have a PhD in analytic philosophy from Purdue, where my
                   research focused on epistemology–specificially, the epistemic
                   mechanisms and consequences of enculturation.
                 </p>
