@@ -256,7 +256,7 @@ export default function Home() {
                             />
                           </a>
                         </h3>
-                        <p className="order-first text-sm font-bold tracking-tight text-zinc-400">
+                        <p className="order-first text-sm font-bold tracking-tight text-zinc-500">
                           {project.year}
                         </p>
                         <p className="mt-4 text-sm text-zinc-700">
