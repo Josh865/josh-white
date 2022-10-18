@@ -203,7 +203,7 @@ export default function Home() {
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                   I’m Josh White, a full stack web developer with a special
                   interest in front-end development and design. I’m currently
-                  leading efforts to modernize eeds. Before that, I built web
+                  working on the next version of eeds. Before that, I built web
                   applications at Purdue University.
                 </p>
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
