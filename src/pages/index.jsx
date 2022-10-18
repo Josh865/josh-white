@@ -282,7 +282,10 @@ export default function Home() {
                         src={project.image}
                         alt={`Screenshots of the ${project.name} application`}
                         className="h-full w-full rounded-xl bg-zinc-100 object-cover shadow-lg"
-                        priority
+                        sizes="(min-width: 768px) 50vw, 33vw"
+                        loading="lazy"
+                        quality={100}
+                        placeholder="blur"
                       />
                     </div>
                   </div>
