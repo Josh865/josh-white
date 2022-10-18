@@ -208,7 +208,7 @@ export default function Home() {
                 </p>
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                   I have a PhD in analytic philosophy from Purdue, where my
-                  research focused on epistemology–specificially, the epistemic
+                  research focused on epistemology–specifically, the epistemic
                   mechanisms and consequences of enculturation.
                 </p>
               </div>
