@@ -193,7 +193,7 @@ export default function Home() {
               <div className="relative z-10 max-w-3xl px-16 py-12">
                 <Image
                   src={joshImage}
-                  alt=""
+                  alt="Josh White"
                   sizes="4rem"
                   className="h-16 w-16 rounded-full bg-zinc-100 object-cover"
                   priority
