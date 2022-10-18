@@ -1,16 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/future/image';
-
-import joshImage from '@/images/josh.jpg';
-import eedsDashboardImage from '@/images/projects/eeds-dashboard.jpg';
-import covidStoriesImage from '@/images/projects/covid-stories.jpg';
-import copyrightOfficeImage from '@/images/projects/copyright-office.jpg';
-import eedsAppImage from '@/images/projects/eeds-app.jpg';
-import oralHistoriesImage from '@/images/projects/oral-histories.jpg';
-import walcImage from '@/images/projects/walc.jpg';
-import campusDatabaseImage from '@/images/projects/campus-database.jpg';
-
-import wavesImage from '@/images/waves.svg';
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
 
 import { LaravelLogo } from '@/components/logos/laravel';
 import { NextLogo } from '@/components/logos/next';
@@ -19,7 +9,15 @@ import { VueLogo } from '@/components/logos/vue';
 import { TailwindLogo } from '@/components/logos/tailwind';
 import { ReactNativeLogo } from '@/components/logos/react-native';
 
-import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
+import joshImage from '@/images/josh.jpg';
+import wavesImage from '@/images/waves.svg';
+import eedsDashboardImage from '@/images/projects/eeds-dashboard.jpg';
+import covidStoriesImage from '@/images/projects/covid-stories.jpg';
+import copyrightOfficeImage from '@/images/projects/copyright-office.jpg';
+import eedsAppImage from '@/images/projects/eeds-app.jpg';
+import oralHistoriesImage from '@/images/projects/oral-histories.jpg';
+import walcImage from '@/images/projects/walc.jpg';
+import campusDatabaseImage from '@/images/projects/campus-database.jpg';
 
 const projects = [
   {
