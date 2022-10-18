@@ -196,7 +196,7 @@ export default function Home() {
                   className="h-16 w-16 rounded-full bg-zinc-100 object-cover"
                   priority
                 />
-                <h1 className="mt-12 text-3xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
+                <h1 className="mt-12 text-3xl font-semibold tracking-tight text-zinc-800 sm:text-5xl">
                   Bringing together design and analysis to deliver delightful
                   digital experiences
                 </h1>
@@ -239,24 +239,22 @@ export default function Home() {
                     <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-[33%,1fr]">
                       <div className="flex flex-col">
                         <h3 className="text-lg font-medium tracking-tight text-zinc-800 sm:text-xl sm:font-bold">
-                          <div className="">
-                            <a
-                              href={project.href}
-                              target="_blank"
-                              rel="noreferrer"
-                              className={`group inline-flex items-center gap-x-1`}
+                          <a
+                            href={project.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            className={`group inline-flex items-center gap-x-1`}
+                          >
+                            <span
+                              className={`underline decoration-2 underline-offset-4 transition ${project.accentColor}`}
                             >
-                              <span
-                                className={`underline decoration-2 underline-offset-4 transition ${project.accentColor}`}
-                              >
-                                {project.name}
-                              </span>
-                              <ArrowTopRightOnSquareIcon
-                                className="h-4 w-4 text-zinc-500 opacity-0 transition group-hover:opacity-100"
-                                aria-hidden="true"
-                              />
-                            </a>
-                          </div>
+                              {project.name}
+                            </span>
+                            <ArrowTopRightOnSquareIcon
+                              className="h-4 w-4 text-zinc-500 opacity-0 transition group-hover:opacity-100"
+                              aria-hidden="true"
+                            />
+                          </a>
                         </h3>
                         <p className="order-first text-sm font-bold tracking-tight text-zinc-400">
                           {project.year}
