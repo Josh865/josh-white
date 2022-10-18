@@ -77,7 +77,7 @@ const projects = [
     name: 'Purdue COVID Stories',
     year: '2021',
     description:
-      'This collaborative project between Purdue Libraries and Office of the Provost enables the Purdue and boader West Lafayette communities to share their experiences of the COVID-19 pandemic. The interactive form allows for a dynamic number of entries and stories can be sorted and filtered according to a number of criteria.',
+      'This collaborative project between Purdue Libraries and Office of the Provost enables the Purdue and broader West Lafayette communities to share their experiences of the COVID-19 pandemic. The interactive form allows for a dynamic number of entries and stories can be sorted and filtered according to a number of criteria.',
     href: 'https://webapps.lib.purdue.edu/covid-stories/',
     image: covidStoriesImage,
     stack: [
@@ -139,7 +139,7 @@ const projects = [
     name: 'eeds Mobile Application',
     year: '2018',
     description:
-      'A cross-platform mobile application written in React Native that allows attendees to medicial education events to easily document and manage their attendance.',
+      'A cross-platform mobile application written in React Native that allows attendees to medical education events to easily document and manage their attendance.',
     href: 'https://apps.apple.com/us/app/eeds-mobile/id541573257?platform=iphone',
     image: eedsAppImage,
     stack: [
@@ -154,7 +154,7 @@ const projects = [
     name: 'Purdue Campus History',
     year: '2017',
     description:
-      'This multi-year, grant-funded project allows visitors to explore the history of Purdue’s West Lafayette campus through an interactive map built with Esri’s ArcGIS JavaScript Api, a full-featured search experience built with Algolia, and a dynamic building timeline that allows visitors to explore how the campus’s buildings have changed over its history. It was featured in local and national news outlets, including the Houston Chronicle, San Antonio Express-News, and Albany (NY) Times Union, among others.',
+      'This multi-year, grant-funded project allows visitors to explore the history of Purdue’s West Lafayette campus through an interactive map built with Esri’s ArcGIS JavaScript Api, a full-featured search experience built with Algolia, and a dynamic building timeline that allows visitors to explore how the campus’s buildings have changed over its history. It was featured in local and national news outlets, including the <i>Houston Chronicle</i>, <i>San Antonio Express-News</i>, and <i>Albany (NY) Times Union</i>, among others.',
     href: 'http://collections.lib.purdue.edu/campus/',
     image: campusDatabaseImage,
     stack: [
@@ -259,9 +259,12 @@ export default function Home() {
                         <p className="order-first text-sm font-bold tracking-tight text-zinc-500">
                           {project.year}
                         </p>
-                        <p className="mt-4 text-sm text-zinc-700">
-                          {project.description}
-                        </p>
+                        <p
+                          className="mt-4 text-sm text-zinc-700"
+                          dangerouslySetInnerHTML={{
+                            __html: project.description,
+                          }}
+                        />
                         {project.stack ? (
                           <ul
                             className="mt-4 flex items-center gap-x-2"
