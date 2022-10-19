@@ -193,13 +193,11 @@ export default function Home() {
                   src={joshImage}
                   alt="Josh White"
                   sizes="4rem"
-                  className="h-12 w-12 rounded-full bg-zinc-100 object-cover shadow-md md:h-16 md:w-16"
+                  className="h-12 w-12 rounded-full bg-zinc-100 object-cover shadow-md ring-1 ring-zinc-300 md:h-16 md:w-16"
                   priority
                 />
                 <h1 className="mt-10 text-3xl font-bold tracking-tight text-zinc-800 sm:text-[2.5rem] sm:leading-[3rem] md:mt-12">
-                  Connecting people through
-                  <br className="hidden md:block" /> well-crafted digital
-                  experiences
+                  Fostering connections through well-crafted digital experiences
                 </h1>
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                   I’m Josh White, a full-stack web developer with a special
