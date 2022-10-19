@@ -193,11 +193,13 @@ export default function Home() {
                   src={joshImage}
                   alt="Josh White"
                   sizes="4rem"
-                  className="h-16 w-16 rounded-full bg-zinc-100 object-cover"
+                  className="h-12 w-12 rounded-full bg-zinc-100 object-cover shadow-md md:h-16 md:w-16"
                   priority
                 />
-                <h1 className="mt-12 text-3xl font-semibold tracking-tight text-zinc-800 sm:text-5xl">
-                  Connecting people through well-crafted digital experiences
+                <h1 className="mt-10 text-3xl font-bold tracking-tight text-zinc-800 sm:text-[2.5rem] sm:leading-[3rem] md:mt-12">
+                  Connecting people through
+                  <br className="hidden md:block" /> well-crafted digital
+                  experiences
                 </h1>
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                   I’m Josh White, a full stack web developer with a special
@@ -259,7 +261,7 @@ export default function Home() {
                           {project.year}
                         </p>
                         <p
-                          className="mt-4 text-sm text-zinc-700"
+                          className="mt-4 text-sm leading-[1.5] text-zinc-700"
                           dangerouslySetInnerHTML={{
                             __html: project.description,
                           }}
