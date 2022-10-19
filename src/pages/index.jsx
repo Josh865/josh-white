@@ -202,7 +202,7 @@ export default function Home() {
                   experiences
                 </h1>
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                  I’m Josh White, a full stack web developer with a special
+                  I’m Josh White, a full-stack web developer with a special
                   interest in front-end development and design. I’m currently
                   working on the next version of eeds. Before that, I built web
                   applications at Purdue University.
