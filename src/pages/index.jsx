@@ -197,8 +197,7 @@ export default function Home() {
                   priority
                 />
                 <h1 className="mt-12 text-3xl font-semibold tracking-tight text-zinc-800 sm:text-5xl">
-                  Bringing together design and analysis to deliver delightful
-                  digital experiences
+                  Connecting people through well-crafted digital experiences
                 </h1>
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                   I’m Josh White, a full stack web developer with a special
