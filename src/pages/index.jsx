@@ -199,13 +199,13 @@ export default function Home() {
                 <h1 className="mt-10 text-3xl font-bold tracking-tight text-zinc-800 sm:text-[2.5rem] sm:leading-[3rem] md:mt-12">
                   Fostering connections through well-crafted digital experiences
                 </h1>
-                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                <p className="mt-6 text-base text-zinc-600">
                   I’m Josh White, a full-stack web developer with a special
                   interest in front-end development and design. I’m currently
                   working on the next version of eeds. Before that, I built web
                   applications at Purdue University.
                 </p>
-                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                <p className="mt-6 text-base text-zinc-600">
                   I have a PhD in analytic philosophy from Purdue, where my
                   research focused on epistemology–specifically, the epistemic
                   mechanisms and consequences of enculturation.
