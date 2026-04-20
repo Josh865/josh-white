@@ -203,9 +203,9 @@ export default function Home() {
                   Fostering connections through well-crafted digital experiences
                 </h1>
                 <p className="mt-6 text-base text-zinc-600">
-                  I’m Josh White, a full-stack web developer with a special
+                  I’m Josh White, a full-stack developer and architect with a special
                   interest in front-end development and design. I’m currently
-                  working on the next version of eeds. Before that, I built web
+                  working at HealthStream. Before that, I built web
                   applications at Purdue University.
                 </p>
                 <p className="mt-6 text-base text-zinc-600">
