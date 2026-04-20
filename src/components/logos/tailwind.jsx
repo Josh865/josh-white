@@ -1,11 +1,6 @@
 export function TailwindLogo({ className }) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 54 33"
-      className={className}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33" className={className}>
       <title>Tailwind</title>
       <g clipPath="url(#prefix__clip0)">
         <path

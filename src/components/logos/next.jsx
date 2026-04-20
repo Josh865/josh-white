@@ -34,10 +34,7 @@ export function NextLogo({ className }) {
         </linearGradient>
       </defs>
       <path d="M16.25 28.5c6.765 0 12.25-5.485 12.25-12.25S23.015 4 16.25 4 4 9.485 4 16.25 9.485 28.5 16.25 28.5Z"></path>
-      <path
-        d="M12 21.5V12l12.25 14.25"
-        stroke="url(#next-icon-gradient-a)"
-      ></path>
+      <path d="M12 21.5V12l12.25 14.25" stroke="url(#next-icon-gradient-a)"></path>
       <path
         d="M21.25 12a.75.75 0 1 0-1.5 0v8.17l1.5 1.64V12Z"
         fill="url(#next-icon-gradient-b)"
