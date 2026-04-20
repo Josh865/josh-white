@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
 
 import { LaravelLogo } from '@/components/logos/laravel';
@@ -25,7 +25,7 @@ const projects = [
     year: '2022',
     description:
       'A prototype for a reimagined eeds administrative dashboard, featuring dynamic, interactive charts, an improved information hierarchy, and novel yet intuitive UI interactions to enable advanced functionality with minimal visual clutter.',
-    href: 'https://eeds-dashboard.vercel.app/',
+    // href: 'https://eeds-dashboard.vercel.app/',
     image: eedsDashboardImage,
     stack: [
       {
@@ -241,7 +241,7 @@ export default function Home() {
                     <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-[33%,1fr]">
                       <div className="flex flex-col">
                         <h3 className="text-lg font-medium tracking-tight text-zinc-800 sm:text-xl sm:font-bold">
-                          <a
+                          {project.href ? <a
                             href={project.href}
                             target="_blank"
                             rel="noreferrer"
@@ -256,7 +256,7 @@ export default function Home() {
                               className="h-4 w-4 text-zinc-500 opacity-0 transition group-hover:opacity-100"
                               aria-hidden="true"
                             />
-                          </a>
+                          </a> : project.name}
                         </h3>
                         <p className="order-first text-sm font-bold tracking-tight text-zinc-500">
                           {project.year}
@@ -287,7 +287,6 @@ export default function Home() {
                         className="h-full w-full rounded-xl bg-zinc-100 object-cover shadow-lg"
                         sizes="(min-width: 768px) 50vw, 33vw"
                         loading="lazy"
-                        quality={100}
                         placeholder="blur"
                       />
                     </div>
