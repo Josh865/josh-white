@@ -2,6 +2,7 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 import Head from "next/head";
 import Image from "next/image";
 
+import { DotnetLogo } from "@/components/logos/dotnet";
 import { LaravelLogo } from "@/components/logos/laravel";
 import { NextLogo } from "@/components/logos/next";
 import { ReactLogo } from "@/components/logos/react";
@@ -14,11 +15,34 @@ import copyrightOfficeImage from "@/images/projects/copyright-office.jpg";
 import covidStoriesImage from "@/images/projects/covid-stories.jpg";
 import eedsAppImage from "@/images/projects/eeds-app.jpg";
 import eedsDashboardImage from "@/images/projects/eeds-dashboard.jpg";
+import hlxImage from "@/images/projects/hlx.jpg";
 import oralHistoriesImage from "@/images/projects/oral-histories.jpg";
 import walcImage from "@/images/projects/walc.jpg";
 import wavesImage from "@/images/waves.svg";
 
 const projects = [
+  {
+    name: "HealthStream Learning Experience",
+    year: "2025",
+    description:
+      "HealthStream's new learning experience, built with a focus on accessibility, performance, and user delight. It features a modern, intuitive interface, robust search and discovery capabilities, and seamless integration with a wide range of educational content.",
+    image: hlxImage,
+    stack: [
+      {
+        name: "Dotnet",
+        Icon: DotnetLogo,
+      },
+      {
+        name: "React",
+        Icon: ReactLogo,
+      },
+      {
+        name: "Tailwind",
+        Icon: TailwindLogo,
+      },
+    ],
+    accentColor: "decoration-[#3374bf] group-hover:text-[#7e22ce]",
+  },
   {
     name: "eeds Dashboard",
     year: "2022",
@@ -42,13 +66,6 @@ const projects = [
     ],
     accentColor: "decoration-[#7e22ce] group-hover:text-[#7e22ce]",
   },
-  // {
-  //   name: 'eeds Landing Page',
-  //   year: '2022',
-  //   description:
-  //     'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi culpa atque earum. Reprehenderit, porro beatae enim laudantium amet facere saepe, error numquam in voluptate rem atque, quas dolorem inventore?',
-  //   href: '#',
-  // },
   {
     name: "Purdue University Copyright Office",
     year: "2021",
